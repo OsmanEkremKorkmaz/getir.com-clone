@@ -1,8 +1,10 @@
 import Menu from "components/ui/Menu"
 import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
 import { BiGlobe } from 'react-icons/bi'
+import { useState } from "react"
+import Language from "./modals/Language"
 
-export default function Footer() {
+export default function Footer({ lang, setLang}) {
 
     const menus = [
         {
@@ -67,9 +69,13 @@ export default function Footer() {
         }
     ]
 
+    const [openLanguageModal, setOpenLanguageModal] = useState(false);
+
+    console.log(lang)
+
     return (
         <div className="bg-white mt-10">
-            <div className="container mx-auto px-4 md:px-0">
+            <div className="container mx-auto px-4 md:px-6">
                 <div className="grid gap-y-6 md:grid-cols-2 lg:grid-cols-4 pt-5 md:pt-10">
                     <section>
                         <nav className="grid gap-y-4">
@@ -88,7 +94,7 @@ export default function Footer() {
                     {menus.map((menu, index) => <Menu key={index} { ...menu } /> )}
                 </div>
                 <div className="flex flex-col md:flex-row gap-y-4 justify-between items-center border-t border-gray-100 mt-6 py-6">
-                    <div className="text-xs text-gray-700 flex gap-x-8">
+                    <div className="text-[13px] text-gray-700 flex gap-x-8">
                         &copy; 2022 Getir
                         <a href="#" className="text-primary-brand-color relative before:w-[3px] before:h-[3px] before:bg-brand-color before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 before:rounded-full">
                             Bilgi Toplumu Hizmetleri
@@ -104,13 +110,14 @@ export default function Footer() {
                         <a href="#" className="w-8 h-8 rounded-lg text-gray-500  transition-colors hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
                             <FaInstagram size={21}/>
                         </a>
-                        <a href="#" className="h-8 px-2 text-xs gap-x-2 rounded-lg border border-gray-100 text-gray-500 transition-colors hover:border-transparent hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
+                        <a onClick={() => {setOpenLanguageModal(true);}} href="#" className="h-8 px-2 text-xs gap-x-2 rounded-lg border border-gray-100 text-gray-500 transition-colors hover:border-transparent hover:bg-primary-brand-color hover:bg-opacity-10 hover:text-primary-brand-color flex items-center justify-center">
                             <BiGlobe size={18} />
-                            Türkçe (TR)
+                            {(lang == "tr") ? "Türkçe (TR)" : "English (EN)"}
                         </a>
                     </nav>
                 </div>
             </div>
+            {openLanguageModal && <Language lang={lang} setLang={setLang} closeModal={setOpenLanguageModal}/>}
         </div>
     )
 }

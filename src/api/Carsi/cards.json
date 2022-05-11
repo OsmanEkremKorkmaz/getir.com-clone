@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "https://getir.com/_next/static/images/intro-locals-delivery-8848a13049e8b793216223fd63e2adbe.png",
+        "title": "İhtiyacınız olan ürünler, gramajı, lezzeti ve tazeliği tam istediğiniz şekilde çarşıdan kapınıza ulaşır!",
+        "description": ""
+    },
+    {
+        "id": 2,
+        "image": "https://getir.com/_next/static/images/intro-locals-all-types-6481a9b850de64ef62a2eb95fe66b04a.png",
+        "title": "GetirÇarşı ile manavdan, kasaba, marketten, pet shopa 100 binlerce ürün sipariş edebilirsiniz!",
+        "description": ""
+    },
+    {
+        "id": 3,
+        "image": "https://getir.com/_next/static/images/intro-locals-in-minutes-1a2f4a07d1bf73b074e6fc23935aaf2b.png",
+        "title": "Siparişiniz getir güvencesi ile dakikalar içerisinde teslim edilir!",
+        "description": ""
+    }
+]

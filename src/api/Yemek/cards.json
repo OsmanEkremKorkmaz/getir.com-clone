@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "https://getir.com/_next/static/images/intro-courier-71fe5640548ab5def63f180df7e79a5c.svg",
+        "title": "Binlerce restorandan yemeğinizi görerek seçin!",
+        "description": ""
+    },
+    {
+        "id": 2,
+        "image": "https://getir.com/_next/static/images/intro-discount-6248544cb695830a2e25debd3c0f3d29.svg",
+        "title": "Haftanın her günü bulabileceğiniz yüzlerce kampanya ile indirimli fiyatlardan yararlanın!",
+        "description": ""
+    },
+    {
+        "id": 3,
+        "image": "https://getir.com/_next/static/images/intro-foods-17936a3941c6c42663b203911b0e744d.svg",
+        "title": "Kredi kartı, kapıda ya da yemek kartları ile hızlı ve güvenli ödeme yapın!",
+        "description": ""
+    }
+]

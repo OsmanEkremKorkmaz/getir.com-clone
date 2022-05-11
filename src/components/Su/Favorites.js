@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Title from "components/ui/Title";
-import Products from 'api/products.json'
+import Products from 'api/Su/products.json'
 import Productitem from "components/ui/Productitem";
 
 export default function Favorites() {
@@ -13,9 +13,9 @@ export default function Favorites() {
 
     return (
         <div>
-            <Title>Favoriler</Title>
-            <div className="grid grid-cols-3 md:grid-cols-5 xl:grid-cols-8 gap-0.25 bg-white rounded-lg overflow-hidden">
-                {products.length && products.map((product, index) => <Productitem key={index} product={product} />)}
+            <Title>Ürünler</Title>
+            <div className="grid grid-cols-3 xl:grid-cols-4 gap-0.25 bg-white rounded-lg overflow-hidden">
+                {products.length && products.map((product, index) => <Productitem key={index} product={product} isWater={true}/>)}
             </div>
         </div>
     )

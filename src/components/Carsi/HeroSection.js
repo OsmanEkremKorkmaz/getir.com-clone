@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Slider from "react-slick";
 import ReactFlagsSelect from "react-flags-select";
-import { useWindowWidth } from '@react-hook/window-size'
+import { useWindowWidth } from '@react-hook/window-size';
+import { RiSearchLine } from "react-icons/ri";
+import { MdLocationSearching } from "react-icons/md";
 
 export default function HeroSection() {
 
@@ -30,29 +32,33 @@ export default function HeroSection() {
         cssEase: "linear"
     };
     return (
-        <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
+        <div className="relative h-auto md:h-[500px]">
             {windowWidth >= 768 && <Slider {...settings}>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-4-1751ad2d8fb42a88742d6751938da7e7.jpg"/>
-                </div>
-                <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-1-757eca6a46304def60cabce74d3f20a2.jpg"/>
-                </div>
-                <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-2-7c23764275cdaf14d7b6cf15ebbdd0c1.jpg"/>
-                </div>
-                <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-3-ffd1e98c5da51809f9adcc3a4a37d751.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/locals-1-0571221e6ee86dec18fe32bd2705e178.jpg"/>
                 </div>
             </Slider>}
-            <div className="md:container flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
-                <div className="hidden md:block">
-                    <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"/>
-                    <h3 className="mt-8 text-4xl font-semibold text-white">
-                        Dakikalar içinde <br/> kapınızda
-                    </h3>
-                </div>
-                <div className="w-full md:w-[400px] md:rounded-lg bg-gray-50 p-6">
+            <div className="md:container md:px-6 flex justify-end items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
+                <div className="w-full md:w-[400px] md:rounded-lg bg-bg-gray p-6">
+                    <div className="flex items-center py-3 pl-4 pr-3 rounded border-2 border-[#DFDEE2] text-sm relative pointer-events-none">
+                        <div className="min-w-[24px] min-h-[24px] inline-flex items-center text-primary-brand-color">
+                            <RiSearchLine fill="currentColor" size={17} width={15} height={15}/>
+                        </div>
+                        <input className="border-0 ml-2 h-auto w-full relative bg-transparent placeholder:text-gray-storm" placeholder="Örn. Etiler mh."></input>
+                        <div className="border-0 pointer-events-auto">
+                            <button className="py-[7px] px-[10px] inline-flex items-center whitespace-nowrap font-semibold text-primary-brand-color rounded-lg bg-[#f3f0fe] border-0">
+                                <MdLocationSearching fill="currentColor" size={18} width={16} height={16}/>
+                                <span className="hidden md:flex ml-1">
+                                    Konumumu Bul
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div className="w-full mt-6 mb-[18px] flex justify-center relative text-center">
+                        <span className="px-3 text-sm font-semibold text-gray-storm !bg-bg-gray before:w-full before:h-[2px] before:!bg-[#f3f0fe] before:absolute hero-section-or before:left-1/2 z-10 before:translate-y-0.5 before:translate-x-0.5">
+                            veya
+                        </span>
+                    </div>
                     <h4 className="text-primary-brand-color text-center font-semibold mb-4">Giriş yap veya kayıt ol</h4>
                     <div className="grid gap-y-3">
                         <div className="flex gap-x-2">

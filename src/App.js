@@ -1,30 +1,39 @@
 import Header from "components/Header"
-import HeroSection from "components/HeroSection"
-import Categories from "components/Categories"
-import Campaigns from "components/Campaigns"
-import Favorites from "components/Favorites"
-import MobileApp from "components/MobileApp"
-import Cards from "components/Cards"
 import Footer from "components/Footer"
-import { useWindowWidth } from '@react-hook/window-size'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainPage from "views/MainPage"
+import Buyuk from "views/Buyuk"
+import Su from "views/Su";
+import Carsi from "views/Carsi";
+import Yemek from "views/Yemek";
+import NoMatch404 from "views/NoMatch404";
+import { useEffect, useState } from "react";
 
 function App() {
+  
+  const [lang, setLang] = useState("tr")
+  const [isLogin, setisLogin] = useState(false)
 
-  const windowWidth = useWindowWidth()
 
+  
+  useEffect(() => {
+    console.log(lang)
+  }, [lang])
+  
   return (
     <div className="App">
-        <Header/>
-        {windowWidth < 768 && <Campaigns/>}
-        <HeroSection/>
-        <Categories/>
-        {windowWidth >= 768 && <Campaigns/>}
-        <div className="container mx-auto grid gap-y-6 pt-8">          
-          <Favorites/>
-          <MobileApp/>
-          <Cards/>
-        </div>
-        <Footer/>
+      <Header lang={lang} setLang={setLang}/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/yemek" element={<Yemek/>}/>
+          <Route path="/buyuk/" element={<Buyuk/>}/>
+          <Route path="/su/" element={<Su/>}/>
+          <Route path="/carsi/" element={<Carsi />}/>
+          <Route path="*" element={<NoMatch404 />}/>
+        </Routes>
+      </Router>
+      <Footer lang={lang} setLang={setLang}/>
     </div>
   );
 }

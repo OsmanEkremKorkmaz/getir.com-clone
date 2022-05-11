@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Slider from "react-slick";
-import Banners from 'api/banners.json';
+import Banners from 'api/Su/banners.json';
 import Title from "components/ui/Title"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { useWindowWidth } from '@react-hook/window-size'
@@ -56,7 +56,7 @@ export default function Campaigns() {
     };
 
     return (
-        <div className="container mx-auto md:py-8">
+        <div className="container mx-auto md:px-6 md:py-8">
             {windowWidth >= 768 && <Title>Kampanyalar</Title>}
             <Slider {...settings} className="md:-mx-2">
                 {banners.length && banners.map((banner, index) => (

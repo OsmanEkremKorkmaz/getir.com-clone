@@ -28,3 +28,18 @@
 .ReactCollapse--collapse {
     @apply transition-all
 }
+
+.hero-section-or::before {
+    width: calc(100% + 48px) !important;
+    top: calc(50% + 1px) !important;
+    z-index: -2 !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.header-link-active>img {
+    filter: brightness(5%) invert(90%) sepia(72%) saturate(3333%) hue-rotate(180deg) contrast(102%);
+}
+
+#register-checkbox:checked ~ #register-checkbox-tick {
+    @apply opacity-100
+}

@@ -1,0 +1,146 @@
+[
+    {
+      "id": 1,
+      "title": "Kuzeyden",
+      "longTitle": "Kuzeyden Su",
+      "image": "https://cdn.getir.com/product/5a7b20fd8e19da0004bb27f8_tr_1615375864268.jpeg",
+      "alt": "1.5 L",
+      "desc": ["🏀🏐🇹🇷Basketbol Milli Takımlar ve Voleybol Milli Takımlar Resmi Su Sponsoru Kuzeyden."],
+      "price": "₺3,95"
+    },
+    {
+      "id": 2,
+      "title": "Kızılay Erzincan",
+      "longTitle": "Kızılay Erzincan Doğal Maden Suyu",
+      "image": "https://cdn.getir.com/product/60018c5bca2126d84459c47f_tr_1610788125046.jpeg",
+      "alt": "6 x 200 ml",
+      "desc": ["İçerisinde bulunan 317 mg/l magnezyum ile zengin magnezyumlu doğal maden suyudur."],
+      "price": "₺7,75"
+    },
+    {
+      "id": 3,
+      "title": "Ülker Napoliten",
+      "longTitle": "Ülker Napoliten",
+      "image": "https://cdn.getir.com/product/574b2219dee8a90300f18d24_tr_1638269157710.jpeg",
+      "alt": "33 g",
+      "desc": [""],
+      "price": "₺5,00"
+    },
+    {
+      "id": 4,
+      "title": "Lay's Mevsim Yeşillikli",
+      "longTitle": "Lay's Fırından Yoğurt ve Mevsim Yeşillikli",
+      "image": "https://cdn.getir.com/product/5bc97aabb137fb001d751ac7_tr_1609123518121.jpeg",
+      "alt": "96 g",
+      "desc": [""],
+      "price": "₺8,95"
+    },
+    {
+      "id": 5,
+      "title": "Kavrulmuş Siyah Ay Çekirdeği",
+      "longTitle": "Tadım Siyah Kavrulmuş Ay Çekirdeği",
+      "image": "https://cdn.getir.com/product/5ccaf4ff1a1763000175a869_tr_1580904995656.jpeg",
+      "alt": "180 g",
+      "desc": [""],
+      "price": "₺9,85"
+    },
+    {
+      "id": 6,
+      "title": "Magnum Badem",
+      "longTitle": "Magnum Badem",
+      "image": "https://cdn.getir.com/product/559fec01f462100c00461d5c_tr_1618323765236.jpeg",
+      "alt": "100 ml",
+      "desc": [""],
+      "price": "₺11,50"
+    },
+    {
+      "id": 8,
+      "title": "Uno Tost Ekmeği",
+      "longTitle": "Uno Tost Ekmeği",
+      "image": "https://cdn.getir.com/product/5c879b921f5acb000125e903_tr_1612851603430.jpeg",
+      "alt": "350 g",
+      "desc": ["Yeni doğa dostu akıllı ambalajla paketlenmiştir. Ambalajı doğada 18-24 ay içinde hiçbir zararlı artık bırakmadan yok olur."],
+      "price": "₺10,95"
+    },
+    {
+      "id": 8,
+      "title": "İçim %3 Yağlı Süt",
+      "longTitle": "İçim %3 Yağlı Süt",
+      "image": "https://cdn.getir.com/product/5ced482d4a8a2a000137da6d_tr_1623652387464.jpeg",
+      "alt": "1 L",
+      "desc": ["Hiçbir katkı maddesi içermez."],
+      "price": "₺12,95"
+    },
+    {
+      "id": 9,
+      "title": "Bahçıvan Süzme Peynir",
+      "longTitle": "Bahçıvan Süzme Peynir",
+      "image": "https://cdn.getir.com/product/5ce65823a72a950001cc88c0_tr_1609902381949.jpeg",
+      "alt": "500 g",
+      "desc": [""],
+      "price": "₺30,95"
+    },
+    {
+      "id": 11,
+      "title": "Hertane Kuru Sele Zeytin",
+      "longTitle": "Hertane Kuru Sele Zeytin",
+      "image": "https://cdn.getir.com/product/6012ba4c08793829b89aa6ed_tr_1638948798067.jpeg",
+      "alt": "285 g",
+      "desc": ["Gemlik hasatından toplanan doğal siyah zeytinlerden oluşur.","Sele yöntemi ile Kuru Sele yapılmıştır.","Doğal yöntemlerle üretilmiştir ve koruyucu içermez.","Serin ve kuru ortamda muhafaza edilmelidir."],
+      "price": "₺39,90"
+    },
+    {
+      "id": 11,
+      "title": "Nuh'un Ankara Spaghetti",
+      "longTitle": "Nuh'un Ankara Spaghetti",
+      "image": "https://cdn.getir.com/product/559fb12df462100c00461494.jpeg",
+      "alt": "500 g",
+      "desc": [""],
+      "price": "₺7,50"
+    },
+    {
+      "id": 13,
+      "title": "Colgate Optik White",
+      "longTitle": "Colgate Optik White Parıldayan Beyazlık Diş Macunu",
+      "image": "https://cdn.getir.com/product/5c3f4bdcf9ba5f0001e7b0d9_tr_1609902603858.jpeg",
+      "alt": "75 ml",
+      "desc": ["Klinik olarak kanıtlanmış beyazlatıcı teknolojisi yüzey lekelerini gidermeye yardımcı olur.","Klinik olarak kanıtlanmış beyazlatıcı içeriği yüzey lekelerini gidermeye ve tartar oluşumunu önlemeye yardımcı olur.","Diş minesi için güvenlidir.","İki hafta sonra günde 2 kere düzenli kullanım sonrası etkilidir."],
+      "price": "₺39,90"
+    },
+    {
+      "id": 13,
+      "title": "Elidor Güçlü ve Parlak Şampuan",
+      "longTitle": "Elidor Güçlü & Parlak Şampuan",
+      "image": "https://cdn.getir.com/product/5e37d21d8aae421521876048_c5e05715-28c2-47cb-8b16-ffb935ede682.jpeg",
+      "alt": "650 ml",
+      "desc": ["İçeriğindeki protein, yağ ve vitaminler sayesinde saçların beslenmesine yardımcı olur."],
+      "price": "₺37,50"
+    },
+    {
+      "id": 14,
+      "title": "Solo Tuvalet Kağıdı",
+      "longTitle": "Solo Tuvalet Kağıdı",
+      "image": "https://cdn.getir.com/product/60a4b1baa415b3197743e314_tr_1621694073698.jpeg",
+      "alt": "16'lı",
+      "desc": [""],
+      "price": "₺67,90"
+    },
+    {
+      "id": 15,
+      "title": "Yumoş Extra Orkide Yasemin",
+      "longTitle": "Yumoş Extra Konsantre Çamaşır Yumuşatıcı Yabani Orkide & Yasemin 60 Yıkama",
+      "image": "https://cdn.getir.com/product/58a1b3f4f24e4d00048d7f62_771879ea-59b7-4305-8c66-0b850ba6c0a7.jpeg",
+      "alt": "1440 ml",
+      "desc": ["Alerjen madde içermez."],
+      "price": "₺39,99"
+    },
+    {
+      "id": 16,
+      "title": "Domestos Dağ Esintisi",
+      "longTitle": "Domestos Yoğun Kıvamlı Çamaşır Suyu Dağ Esintisi",
+      "image": "https://cdn.getir.com/product/5d7f8cc2acc4700001253d9e_28f4dad2-c82d-4640-b057-6330c3a4918a.jpeg",
+      "alt": "1850 ml",
+      "desc": ["Yoğun kıvamlı formülüyle yüzeylere tutunarak uzun süre etki sağlar."],
+      "price": "₺26,90"
+    }
+]
