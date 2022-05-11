@@ -592,6 +592,62 @@ html, body {
   right: 0.75rem;
 }
 
+.right-0 {
+  right: 0px;
+}
+
+.right-2 {
+  right: 0.5rem;
+}
+
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-7 {
+  right: 1.75rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.right-\[26px\] {
+  right: 26px;
+}
+
+.bottom-1 {
+  bottom: 0.25rem;
+}
+
+.bottom-6 {
+  bottom: 1.5rem;
+}
+
+.bottom-4 {
+  bottom: 1rem;
+}
+
+.bottom-5 {
+  bottom: 1.25rem;
+}
+
+.bottom-\[26px\] {
+  bottom: 26px;
+}
+
+.bottom-\[22px\] {
+  bottom: 22px;
+}
+
+.bottom-\[20px\] {
+  bottom: 20px;
+}
+
+.bottom-\[21px\] {
+  bottom: 21px;
+}
+
 .z-30 {
   z-index: 30;
 }
@@ -608,6 +664,10 @@ html, body {
   margin: 0px;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -621,6 +681,11 @@ html, body {
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .mt-10 {
@@ -829,6 +894,10 @@ html, body {
 
 .w-auto {
   width: auto;
+}
+
+.w-\[100\.41px\] {
+  width: 100.41px;
 }
 
 .w-\[95\.16px\] {
@@ -2023,12 +2092,20 @@ html, body {
     position: absolute;
   }
 
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:left-1\/2 {
     left: 50%;
   }
 
   .md\:top-\[9px\] {
     top: 9px;
+  }
+
+  .md\:right-auto {
+    right: auto;
   }
 
   .md\:mx-auto {
@@ -2060,6 +2137,10 @@ html, body {
 
   .md\:flex {
     display: flex;
+  }
+
+  .md\:inline-flex {
+    display: inline-flex;
   }
 
   .md\:hidden {

@@ -1,4 +1,8 @@
-export default function ViewProduct({closeModal, product}){
+import { useWindowWidth } from '@react-hook/window-size'
+
+export default function ViewProduct({closeModal, product}){    
+
+    const windowWidth = useWindowWidth()
 
     return (
         <div className="fixed inset-0 bg-[#18112db8] z-30 flex items-center justify-center overflow-hidden">
@@ -31,6 +35,25 @@ export default function ViewProduct({closeModal, product}){
                     <div className="w-full flex justify-center items-center">
                         <img className="w-[360px] h-[360px]" src={product.image}/>
                     </div>
+                    {windowWidth < 768 && 
+                        <div className='my-4 mx-auto'>
+                            <div className="flex items-center rounded-lg overflow-hidden border border-black/8">
+                                <button className="flex items-center justify-center text-[#a2a2a2] h-8 w-8 rounded-r-none bg-white">
+                                    <svg width={10} height={10} data-testid="icon" name="minus" size="10" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <path fill="currentColor" d="M2 18h28c1.1 0 2-0.9 2-2s-0.9-2-2-2h-28c-1.1 0-2 0.9-2 2s0.9 2 2 2z" />
+                                    </svg>
+                                </button>
+                                <div className="flex items-center justify-center w-8 h-8 text-white bg-primary-brand-color">
+                                    1
+                                </div>
+                                <button className="flex items-center justify-center text-primary-brand-color h-8 w-8 rounded-l-none bg-white">
+                                    <svg width={10} height={10} data-testid="icon" name="minus" size="10" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                        <path fill="currentColor" d="M16 32c1.1 0 2-0.9 2-2v-12h12c1.1 0 2-0.9 2-2s-0.9-2-2-2h-12v-12c0-1.1-0.9-2-2-2s-2 0.9-2 2v12h-12c-1.1 0-2 0.9-2 2s0.9 2 2 2h12v12c0 1.1 0.9 2 2 2z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    }
                     <div className="px-8 pt-8 pb-4 mt-4 border-t text-left border-[#f5f5f5]">
                         <h3 className="text-primary-brand-color font-semibold text-lg mb-2">{product.longTitle}</h3>
                         <span className="text-sm text-gray-storm font-normal">{product.alt}</span>
@@ -43,8 +66,8 @@ export default function ViewProduct({closeModal, product}){
                         </ol>
                     </div>
                 </div>
-                <div className="flex items-center justify-between py-5 px-6 rounded-b-lg bg-white border-t border-[#f5f5f5]">
-                    <div className="flex items-center rounded-lg overflow-hidden border border-black/8">
+                <div className="flex flex-col md:flex-row items-center justify-between py-5 px-6 rounded-b-lg bg-white border-t border-[#f5f5f5]">
+                    {windowWidth >= 768 && <div className="flex items-center rounded-lg overflow-hidden border border-black/8">
                         <button className="flex items-center justify-center text-[#a2a2a2] h-8 w-8 rounded-r-none bg-white">
                             <svg width={10} height={10} data-testid="icon" name="minus" size="10" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path fill="currentColor" d="M2 18h28c1.1 0 2-0.9 2-2s-0.9-2-2-2h-28c-1.1 0-2 0.9-2 2s0.9 2 2 2z" />
@@ -58,8 +81,8 @@ export default function ViewProduct({closeModal, product}){
                                 <path fill="currentColor" d="M16 32c1.1 0 2-0.9 2-2v-12h12c1.1 0 2-0.9 2-2s-0.9-2-2-2h-12v-12c0-1.1-0.9-2-2-2s-2 0.9-2 2v12h-12c-1.1 0-2 0.9-2 2s0.9 2 2 2h12v12c0 1.1 0.9 2 2 2z" />
                             </svg>
                         </button>
-                    </div>
-                    <div className="inline-flex rounded-lg bg-primary-brand-color border-2 border-primary-brand-color text-white">
+                    </div>}
+                    <div className="inline-flex md:w-auto w-full justify-between rounded-lg bg-primary-brand-color border-2 border-primary-brand-color text-white">
                         <button className="py-[15px] px-10 font-semibold">Sepete Ekle</button>
                         <div className="text-primary-brand-color bg-white inline-flex items-center justify-center py-[14px] px-4 rounded-r">{product.price}</div>
                     </div>
