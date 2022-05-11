@@ -1,6 +1,8 @@
 # Getir.com clone
 
-![image](https://user-images.githubusercontent.com/96390357/165545072-78e6e2f8-daf2-4002-984c-c070bd2c3bec.png)
+![image](https://user-images.githubusercontent.com/96390357/167805190-1900428c-3ab2-437f-b414-ff1fa8806660.png)
+
+
 
 ## Starting Project
 ```
