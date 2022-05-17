@@ -2,145 +2,145 @@
     {
       "id": 1,
       "title": "Kuzeyden",
-      "longTitle": "",
+      "longTitle": "Kuzeyden Su",
       "image": "https://cdn.getir.com/product/5a7b20fd8e19da0004bb27f8_tr_1615375864268.jpeg",
       "alt": "1.5 L",
-      "desc": "",
+      "desc": ["🏀🏐🇹🇷Basketbol Milli Takımlar ve Voleybol Milli Takımlar Resmi Su Sponsoru Kuzeyden."],
       "price": "₺2,95"
     },
     {
       "id": 2,
       "title": "Coca-Cola",
-      "longTitle": "",
+      "longTitle": "Coca-Cola",
       "image": "https://cdn.getir.com/product/59024b386532a700044603fe_tr_1633010172922.jpeg",
       "alt": "1 L",
-      "desc": "",
+      "desc": [],
       "price": "₺7,95"
     },
     {
       "id": 3,
       "title": "Doritos Nacho Peynirli",
-      "longTitle": "",
+      "longTitle": "Doritos Nacho Peynirli Mısır Cipsi Süper Boy",
       "image": "https://cdn.getir.com/product/5bc97ecdb555e900179c5427_tr_1609405155892.png",
       "alt": "113 g",
-      "desc": "",
+      "desc": [],
       "price": "₺8,25"
     },
     {
       "id": 4,
       "title": "Ülker Napoliten",
-      "longTitle": "",
+      "longTitle": "Ülker Napoliten",
       "image": "https://cdn.getir.com/product/574b2219dee8a90300f18d24_tr_1638269157710.jpeg",
       "alt": "33 g",
-      "desc": "",
+      "desc": [],
       "price": "₺5,00"
     },
     {
       "id": 5,
       "title": "Kavrulmuş Siyah Ay Çekirdeği",
-      "longTitle": "",
+      "longTitle": "Tadım Siyah Kavrulmuş Ay Çekirdeği",
       "image": "https://cdn.getir.com/product/5ccaf4ff1a1763000175a869_tr_1580904995656.jpeg",
       "alt": "180 g",
-      "desc": "",
+      "desc": [],
       "price": "₺9,00"
     },
     {
       "id": 6,
       "title": "Ice Dream Karadut & Kavun",
-      "longTitle": "",
+      "longTitle": "Ice Dream Karadut & Kavun Dondurma",
       "image": "https://cdn.getir.com/product/6108fa0bf21dd1f77b69910c_tr_1638976330443.jpeg",
       "alt": "450 ml",
-      "desc": "",
+      "desc": [],
       "price": "30,00"
     },
     {
       "id": 7,
       "title": "Carte d'Or Çikolata",
-      "longTitle": "",
+      "longTitle": "Carte d'Or Selection Çikolata Karnavalı",
       "image": "https://cdn.getir.com/product/593e7bbef863e90004a70395_tr_1590158400421.jpeg",
       "alt": "850 ml",
-      "desc": "",
+      "desc": ["Sütlü çikolata, çikolata parçaları ve beyaz çikolata sosuyla lezzet karnavalı."],
       "price": "₺36,00"
     },
     {
       "id": 8,
       "title": "Uno Tost Ekmeği",
-      "longTitle": "",
+      "longTitle": "Uno Tost Ekmeği",
       "image": "https://cdn.getir.com/product/5c879b921f5acb000125e903_tr_1612851603430.jpeg",
       "alt": "350 g",
-      "desc": "",
+      "desc": ["Yeni doğa dostu akıllı ambalajla paketlenmiştir. Ambalajı doğada 18-24 ay içinde hiçbir zararlı artık bırakmadan yok olur."],
       "price": "₺10,95"
     },
     {
       "id": 9,
       "title": "İçim Laktozsuz Süt",
-      "longTitle": "",
+      "longTitle": "İçim Laktozsuz Süt",
       "image": "https://cdn.getir.com/product/5ced482dd349d10001e70531_tr_1623652157209.jpeg",
       "alt": "1 L",
-      "desc": "",
+      "desc": ["Laktozsuz olarak üretilmiştir.","Sindirimi kolaydır."],
       "price": "₺11,95"
     },
     {
       "id": 10,
       "title": "Sütaş Kaşar Peyniri",
-      "longTitle": "",
+      "longTitle": "Sütaş Taze Kaşar Peyniri",
       "image": "https://cdn.getir.com/product/582331c25b31d60004489724_tr_1603570638221.jpeg",
       "alt": "500 g",
-      "desc": "",
+      "desc": [],
       "price": "₺48,25"
     },
     {
       "id": 11,
       "title": "Hertane Kuru Sele Zeytin",
-      "longTitle": "",
+      "longTitle": "Hertane Kuru Sele Zeytin",
       "image": "https://cdn.getir.com/product/6012c56c18495db74f09d75c_tr_1638949311938.jpeg",
       "alt": "400 g",
-      "desc": "",
+      "desc": ["Gemlik hasatından toplanan doğal siyah zeytinlerden oluşur.","Sele yöntemi ile Kuru Sele yapılmıştır.","Doğal yöntemlerle üretilmiştir ve koruyucu içermez.","Serin ve kuru ortamda muhafaza edilmelidir."],
       "price": "₺44,90"
     },
     {
       "id": 12,
       "title": "Nuh'un Ankara Burgu",
-      "longTitle": "",
+      "longTitle": "Nuh'un Ankara Burgu Makarna",
       "image": "https://cdn.getir.com/product/559fb052f462100c00461474.jpeg",
       "alt": "500 g",
-      "desc": "",
+      "desc": [],
       "price": "₺6,75"
     },
     {
       "id": 13,
       "title": "Colgate Optik White",
-      "longTitle": "",
+      "longTitle": "Colgate Optik White Parıldayan Beyazlık Diş Macunu",
       "image": "https://cdn.getir.com/product/5c3f4bdcf9ba5f0001e7b0d9_tr_1609902603858.jpeg",
       "alt": "75 ml",
-      "desc": "",
+      "desc": ["Klinik olarak kanıtlanmış beyazlatıcı teknolojisi yüzey lekelerini gidermeye yardımcı olur.","Klinik olarak kanıtlanmış beyazlatıcı içeriği yüzey lekelerini gidermeye ve tartar oluşumunu önlemeye yardımcı olur.","Diş minesi için güvenlidir.","İki hafta sonra günde 2 kere düzenli kullanım sonrası etkilidir."],
       "price": "₺39,90"
     },
     {
       "id": 14,
       "title": "Solo Kağıt Havlu",
-      "longTitle": "",
+      "longTitle": "Solo Kağıt Havlu",
       "image": "https://cdn.getir.com/product/605afb7926bc0e6473dc7051_tr_1616596059875.jpeg",
       "alt": "12'li",
-      "desc": "",
+      "desc": [],
       "price": "₺49,50"
     },
     {
       "id": 15,
       "title": "Yumoş Extra Lilyum & Lotus",
-      "longTitle": "",
+      "longTitle": "Yumoş Extra Konsantre Çamaşır Yumuşatıcı Lilyum & Lotus 60 Yıkama",
       "image": "https://cdn.getir.com/product/5ac780d556352c000435251f_tr_1631104777493.jpeg",
       "alt": "1440 ml",
-      "desc": "",
+      "desc": ["Alerjen içermeyen formülü sayesinde cilde zarar vermez."],
       "price": "₺36,99"
     },
     {
       "id": 16,
       "title": "Domestos Dağ Esintisi",
-      "longTitle": "",
+      "longTitle": "Domestos Yoğun Kıvamlı Çamaşır Suyu Dağ Esintisi",
       "image": "https://cdn.getir.com/product/5d7f8cc2acc4700001253d9e_28f4dad2-c82d-4640-b057-6330c3a4918a.jpeg",
       "alt": "1850 ml",
-      "desc": "",
+      "desc": ["Yoğun kıvamlı formülüyle yüzeylere tutunarak uzun süre etki sağlar."],
       "price": "₺26,90"
     }
 ]

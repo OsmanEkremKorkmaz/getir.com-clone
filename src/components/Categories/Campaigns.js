@@ -55,8 +55,7 @@ export default function Campaigns() {
     };
 
     return (
-        <div className="container mx-auto md:py-8 md:px-6">
-            {windowWidth >= 768 && <Title>Kampanyalar</Title>}
+        <div className="container mx-auto md:px-6">
             <Slider {...settings} className="md:-mx-2">
                 {banners.length && banners.map((banner) => (                
                     <div key={banner.id}>

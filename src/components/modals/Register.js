@@ -47,14 +47,14 @@ export default function Register({closeModal, openLoginModal}){
                         <span className="absolute top-0 left-0 h-full px-4 flex items-center text-sm text-gray-500 peer-focus:h-7 transition-all peer-focus:text-primary-brand-color peer-focus:text-xs peer-valid:h-7 peer-valid:text-primary-brand-color peer-valid:text-xs">E-Posta</span>
                     </label>
                     <div className="mt-4">
-                        <div className="inline-flex group relative items-center cursor-pointer mr-3 text-xs text-[#a2a2a2]">
+                        <div htmlFor="register-checkbox"  className="inline-flex group relative items-center cursor-pointer mr-3 text-xs text-[#a2a2a2]">
                             <span>    
                                 <input id="register-checkbox" type={"checkbox"} className="flex appearance-none m-0 cursor-pointer relative transition-all checked:!border-primary-brand-color checked:bg-primary-brand-color items-center justify-center !w-[22px] !h-[22px] border-2 p-[2px] border-[#dfdee2] rounded group-hover:border-secondary-brand-color"/>
-                                <svg htmlFor="register-checkbox" id="register-checkbox-tick" className="absolute left-1 top-1 md:top-[9px] opacity-0" color="#fff" width={14} height={14} size="14" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <svg id="register-checkbox-tick" className="absolute left-1 top-1 md:top-[9px] opacity-0" color="#fff" width={14} height={14} size="14" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                     <path fill="currentColor" d="M31.26 4.951c0.987 0.987 0.987 2.586 0 3.573l-18.526 18.526c-0.987 0.987-2.586 0.987-3.573 0l-8.421-8.421c-0.987-0.987-0.987-2.586 0-3.573s2.586-0.987 3.573 0l6.635 6.635 16.74-16.74c0.987-0.987 2.586-0.987 3.573 0z"/>
                                 </svg>
                             </span>
-                            <span htmlFor="register-checkbox" className="pl-3">
+                            <span className="pl-3">
                                 Getir’in bana özel kampanya, tanıtım ve fırsatlarından haberdar olmak istiyorum.
                             </span>
                         </div>

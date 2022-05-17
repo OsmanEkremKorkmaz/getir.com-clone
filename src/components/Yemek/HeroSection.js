@@ -36,17 +36,9 @@ export default function HeroSection() {
                 <div className="w-full h-[600px] object-cover">
                     <video playsInline controls autoPlay loop poster="https://getir.com/_next/static/images/1-hamburger-5bd2394b457b4c9b183524ba528219df.jpg">
                         <source src="https://getir.com/videos/1-hamburger.mp4" type="video/mp4"/>
-                    </video>
-                    <video playsInline controls autoPlay loop poster="https://getir.com/_next/static/images/2-doner-de7035383b0869256fc729fca0b988e0.jpg">
                         <source src="https://getir.com/videos/2-doner.mp4" type="video/mp4"/>
-                    </video>
-                    <video playsInline controls autoPlay loop poster="https://getir.com/_next/static/images/3-pide-392707f8bd94b8c4ee3909d697d58332.jpg">
                         <source src="https://getir.com/videos/3-pide.mp4" type="video/mp4"/>
-                    </video>
-                    <video playsInline controls autoPlay loop poster="https://getir.com/_next/static/images/4-pizza-fbf4289e13a08084dff144b93013ed25.jpg">
                         <source src="https://getir.com/videos/4-pizza.mp4" type="video/mp4"/>
-                    </video>
-                    <video playsInline controls autoPlay loop poster="https://getir.com/_next/static/images/5-kunefe-67169ff7c185223f5b74bafb8627db8c.jpg">
                         <source src="https://getir.com/videos/5-kunefe.mp4" type="video/mp4"/>
                     </video>
                 </div>

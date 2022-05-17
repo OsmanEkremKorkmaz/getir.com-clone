@@ -33,7 +33,6 @@ export default function Campaigns() {
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 500,
         autoplaySpeed: 3500,
         cssEase: "linear",
         nextArrow: <NextBtn />,
@@ -55,17 +54,26 @@ export default function Campaigns() {
         ]
     };
 
+
     return (
         <div className="container md:px-6 mx-auto md:py-8">
             {windowWidth >= 768 && <Title>Kampanyalar</Title>}
             <Slider {...settings} className="md:-mx-2">
-                {banners.length && banners.map((banner, index) => (
+                {banners?.map((banner) => (                
                     <div key={banner.id}>
                         <picture className="block md:px-2">
                             <img src={banner.image} className="md:rounded-lg"/>
                         </picture>
-                    </div>
+                    </div>                    
                 ))}
+                {(windowWidth < 768) ? new Array((1 - banners.length > 0) ? (1 - banners.length) : 0).fill(
+                        <></>
+                    ):
+                (windowWidth < 1024) ? new Array((2 - banners.length > 0) ? (2 - banners.length) : 0).fill(
+                        <></>
+                    ): new Array((3 - banners.length > 0) ? (3 - banners.length) : 0).fill(
+                        <></>
+                    )}
             </Slider>
         </div>
     )

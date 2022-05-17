@@ -3,75 +3,20 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa"
 import { BiGlobe } from 'react-icons/bi'
 import { useState } from "react"
 import Language from "./modals/Language"
+import { useSelector } from "react-redux"
+import { language } from "language"
 
-export default function Footer({ lang, setLang}) {
-
-    const menus = [
-        {
-            title: 'Getir\'i Keşfedin',
-            items: [
-                {
-                    title: 'Hakkımızda'
-                },
-                {
-                    title: 'Kariyer'
-                },
-                {
-                    title: 'Teknoloji Kariyerleri'
-                },
-                {
-                    title: 'İletişim'
-                },
-                {
-                    title: 'COVID-19 Duyuru'
-                },
-                {
-                    title: 'Sosyal Sorumluluk Projeleri'
-                },
-            ]
-        },
-        {
-            title: 'Yardıma mı ihtiyacınız var?',
-            items: [
-                {
-                    title: 'Sıkça Sorulan Sorular'
-                },
-                {
-                    title: 'Kişisel Verilerin Korunması'
-                },
-                {
-                    title: 'Gizlilik Politikası'
-                },
-                {
-                    title: 'Kullanım Koşulları'
-                },
-                {
-                    title: 'Çerez Politikası'
-                }
-            ]
-        },
-        {
-            title: 'İş Ortağımız Olun',
-            items: [
-                {
-                    title: 'Bayimiz Olun'
-                },
-                {
-                    title: 'Deponuzu Kiralayın'
-                },
-                {
-                    title: 'GetirYemek Restoranı Olun'
-                },
-                {
-                    title: 'GetirÇarşı İşletmesi Olun'
-                }
-            ]
-        }
-    ]
+export default function Footer() {
 
     const [openLanguageModal, setOpenLanguageModal] = useState(false);
+    const lang = useSelector(state => state.settings.lang)
+    const langText = language[lang].footer
 
-    console.log(lang)
+    const menus = [
+        langText.discoverGetir,
+        langText.needHelp,
+        langText.becomeOurBusinessPartner
+    ]
 
     return (
         <div className="bg-white mt-10">
@@ -79,15 +24,15 @@ export default function Footer({ lang, setLang}) {
                 <div className="grid gap-y-6 md:grid-cols-2 lg:grid-cols-4 pt-5 md:pt-10">
                     <section>
                         <nav className="grid gap-y-4">
-                            <h6 className="text-lg text-primary-brand-color">Getir'i indirin!</h6>
+                            <h6 className="text-lg text-primary-brand-color">{langText.downloadGetir.title}</h6>
                             <a href="#">
-                                <img src="https://getir.com/_next/static/images/appstore-tr-141ed939fceebdcee96af608fa293b31.svg" />
+                                <img src={langText.downloadGetir.appStore} />
                             </a>
                             <a href="#">
-                                <img src="https://getir.com/_next/static/images/googleplay-tr-6b0c941b7d1a65d781fb4b644498be75.svg" />
+                                <img src={langText.downloadGetir.googlePlay} />
                             </a>
                             <a href="#">
-                                <img src="https://getir.com/_next/static/images/huawei-appgallery-tr-4b890fa3167bc62f9069edaf45aa7f30.svg" />
+                                <img src={langText.downloadGetir.appGalary} />
                             </a>
                         </nav>
                     </section>
@@ -97,7 +42,7 @@ export default function Footer({ lang, setLang}) {
                     <div className="text-[13px] text-gray-700 flex gap-x-8">
                         &copy; 2022 Getir
                         <a href="#" className="text-primary-brand-color relative before:w-[3px] before:h-[3px] before:bg-brand-color before:absolute before:-left-4 before:top-1/2 before:-translate-y-1/2 before:rounded-full">
-                            Bilgi Toplumu Hizmetleri
+                            {langText.informationSocietyServices}
                         </a>
                     </div>
                     <nav className="flex gap-x-3">
@@ -117,7 +62,7 @@ export default function Footer({ lang, setLang}) {
                     </nav>
                 </div>
             </div>
-            {openLanguageModal && <Language lang={lang} setLang={setLang} closeModal={setOpenLanguageModal}/>}
+            {openLanguageModal && <Language closeModal={setOpenLanguageModal}/>}
         </div>
     )
 }

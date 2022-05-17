@@ -1,8 +1,23 @@
 import { useWindowWidth } from '@react-hook/window-size'
+import { useState } from "react";
+import Login from "components/modals/Login";
+import { useSelector } from 'react-redux';
 
 export default function ViewProduct({closeModal, product}){    
 
+    const user = useSelector(state => state.settings.user)
+
     const windowWidth = useWindowWidth()
+    const [openLoginModal, setOpenLoginModal] = useState(false);
+    const [openRegisterModal, setOpenRegisterModal] = useState(false);  
+    
+    const addToCart = () => {
+        if(user){
+            console.log("sepete eklendi")
+        } else {
+            setOpenLoginModal(true)
+        }
+    }
 
     return (
         <div className="fixed inset-0 bg-[#18112db8] z-30 flex items-center justify-center overflow-hidden">
@@ -15,7 +30,7 @@ export default function ViewProduct({closeModal, product}){
                     </button>
                 </div>
                 <div className="p-[20px] border-b justify-start flex border-[#f5f5f5]">
-                    <button className="inline-flex items-center font-semibold">
+                    <button onClick={addToCart} className="inline-flex items-center font-semibold">
                         <div className="mr-2 flex items-center">
                             <div className="min-w-[24px] inline-flex items-center absolute justify-center">
                                 <svg width={18} height={18} name="heart" size="18" color="rgba(0,0,0,0.2)" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -68,7 +83,7 @@ export default function ViewProduct({closeModal, product}){
                 </div>
                 <div className="flex flex-col md:flex-row items-center justify-between py-5 px-6 rounded-b-lg bg-white border-t border-[#f5f5f5]">
                     {windowWidth >= 768 && <div className="flex items-center rounded-lg overflow-hidden border border-black/8">
-                        <button className="flex items-center justify-center text-[#a2a2a2] h-8 w-8 rounded-r-none bg-white">
+                        <button onClick={addToCart} disabled className="flex items-center justify-center text-primary-brand-color disabled:text-[#a2a2a2] h-8 w-8 rounded-r-none bg-white">
                             <svg width={10} height={10} data-testid="icon" name="minus" size="10" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path fill="currentColor" d="M2 18h28c1.1 0 2-0.9 2-2s-0.9-2-2-2h-28c-1.1 0-2 0.9-2 2s0.9 2 2 2z" />
                             </svg>
@@ -76,18 +91,19 @@ export default function ViewProduct({closeModal, product}){
                         <div className="flex items-center justify-center w-8 h-8 text-white bg-primary-brand-color">
                             1
                         </div>
-                        <button className="flex items-center justify-center text-primary-brand-color h-8 w-8 rounded-l-none bg-white">
+                        <button onClick={addToCart} className="flex items-center justify-center text-primary-brand-color disabled:text-[#a2a2a2] h-8 w-8 rounded-l-none bg-white">
                             <svg width={10} height={10} data-testid="icon" name="minus" size="10" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                 <path fill="currentColor" d="M16 32c1.1 0 2-0.9 2-2v-12h12c1.1 0 2-0.9 2-2s-0.9-2-2-2h-12v-12c0-1.1-0.9-2-2-2s-2 0.9-2 2v12h-12c-1.1 0-2 0.9-2 2s0.9 2 2 2h12v12c0 1.1 0.9 2 2 2z" />
                             </svg>
                         </button>
                     </div>}
                     <div className="inline-flex md:w-auto w-full justify-between rounded-lg bg-primary-brand-color border-2 border-primary-brand-color text-white">
-                        <button className="py-[15px] px-10 font-semibold">Sepete Ekle</button>
+                        <button onClick={addToCart} className="py-[15px] px-10 font-semibold">Sepete Ekle</button>
                         <div className="text-primary-brand-color bg-white inline-flex items-center justify-center py-[14px] px-4 rounded-r">{product.price}</div>
                     </div>
                 </div>
             </div>
+            {openLoginModal && <Login closeModal={setOpenLoginModal} openRegisterModal={setOpenRegisterModal}/>}
         </div>
     )
 }
