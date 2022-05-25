@@ -8,8 +8,8 @@ function MainPage(){
     return (
         <>
             <HeroSection/>
+            <Foods />
             <div className="container mx-auto grid gap-y-3 md:px-6">
-                <Foods />
                 <Cards/>
                 <PartnerRestaurant/>
             </div>

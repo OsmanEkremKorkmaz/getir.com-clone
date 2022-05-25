@@ -33,8 +33,8 @@ export default function HeroSection() {
     return (
         <div className="relative h-auto md:h-[600px]">
             {windowWidth >= 768 && <Slider {...settings}>
-                <div className="w-full h-[600px] object-cover">
-                    <video playsInline controls autoPlay loop poster="https://getir.com/_next/static/images/1-hamburger-5bd2394b457b4c9b183524ba528219df.jpg">
+                <div className="w-full md:h-[600px] object-cover">
+                    <video className="w-full md:h-[600px] object-cover" playsInline autoPlay loop poster="https://getir.com/_next/static/images/1-hamburger-5bd2394b457b4c9b183524ba528219df.jpg">
                         <source src="https://getir.com/videos/1-hamburger.mp4" type="video/mp4"/>
                         <source src="https://getir.com/videos/2-doner.mp4" type="video/mp4"/>
                         <source src="https://getir.com/videos/3-pide.mp4" type="video/mp4"/>

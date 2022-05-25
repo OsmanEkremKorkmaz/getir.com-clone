@@ -56,12 +56,12 @@ export default function Foods() {
     };
 
     return (
-        <div className="container mx-auto md:pt-8">
+        <div className="container mx-auto md:pt-8 mb-3 md:px-6">
             {windowWidth >= 768 && <Title>Mutfaklar</Title>}
             <Slider {...settings} className="md:-mx-2">
                 {foods.length && foods.map((food, index) => (
-                    <div className="px-2">                        
-                        <Food key={index} food={food}/>
+                    <div key={index} className="px-2">                        
+                        <Food  food={food}/>
                     </div>
                 ))}
             </Slider>
