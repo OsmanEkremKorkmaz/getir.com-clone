@@ -4,7 +4,7 @@ import { HiUserAdd } from 'react-icons/hi'
 import { useWindowWidth } from '@react-hook/window-size'
 import { HiLocationMarker } from 'react-icons/hi'
 import { IoIosArrowForward } from 'react-icons/io'
-import { NavLink, BrowserRouter as Router } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from 'react'
 import Login from './modals/Login'
 import Register from './modals/Register'
@@ -68,7 +68,7 @@ export default function Header() {
                     <nav className="hidden md:flex gap-x-7 text-sm font-semibold">
                         <a onClick={() => {setOpenLanguageModal(true);}} href="#" className="flex items-center gap-x-2 font-normal text-white transition-all text-opacity-80 hover:text-opacity-100 pr-1">
                             <BiGlobe size={20} />
-                            {windowWidth >= 1024 && ((lang == "tr") ? "Türkçe (TR)" : "English (EN)")}
+                            {windowWidth >= 1024 && ((lang === "tr") ? "Türkçe (TR)" : "English (EN)")}
                         </a>
                         <a onClick={() => {setOpenLoginModal(true);}} href="#" className="flex items-center gap-x-2 text-white transition-all text-opacity-80 hover:text-opacity-100 pr-1">
                             <RiUserFill size={20} />
