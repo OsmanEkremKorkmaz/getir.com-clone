@@ -55,7 +55,8 @@ export default function HeroSection() {
                         </div>
                     </div>
                     <div className="w-full mt-6 mb-[18px] flex justify-center relative text-center">
-                        <span className="px-3 text-sm font-semibold text-gray-storm !bg-bg-gray before:w-full before:h-[2px] before:!bg-[#f3f0fe] before:absolute hero-section-or before:left-1/2 z-10 before:translate-y-0.5 before:translate-x-0.5">
+                        <span className="bg-[#f3f0fe] h-[2px] w-full absolute translate-y-2.5 hero-section-or translate-x-0.5"></span>
+                        <span className="px-3 text-sm font-semibold text-gray-storm !bg-bg-gray z-10">
                             veya
                         </span>
                     </div>
