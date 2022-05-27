@@ -2,7 +2,8 @@
 
 ![image](https://user-images.githubusercontent.com/96390357/167805190-1900428c-3ab2-437f-b414-ff1fa8806660.png)
 
-
+## Demo
+[Live Demo](https://react-getir.netlify.app)
 
 ## Starting Project
 ```
@@ -21,3 +22,6 @@ npm start
 - [react-collapse](https://www.npmjs.com/package/react-collapse)
 - [React Icons](https://react-icons.github.io/react-icons/search)
 - [useWindowSize()](https://www.npmjs.com/package/@react-hook/window-size)
+
+## 📕 License
+Licensed under the [MIT license](https://github.com/OsmanEkremKorkmaz/getir.com-clone/blob/main/LICENSE)
