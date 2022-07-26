@@ -43,3 +43,16 @@
 #register-checkbox:checked ~ #register-checkbox-tick {
     @apply opacity-100
 }
+
+.container {
+    @apply 2xl:max-w-7xl xl:max-w-5xl max-w-4xl
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}

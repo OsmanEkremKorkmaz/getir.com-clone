@@ -18,7 +18,8 @@ module.exports = {
         'secondary-brand-color': '#7849f7',
         'brand-yellow': '#ffd300',
         'gray-storm': '#697488',
-        'bg-gray': '#fafafa'
+        'bg-gray': '#fafafa',
+        'primary-light' : "#f3f0fe"
       })
     },
   },

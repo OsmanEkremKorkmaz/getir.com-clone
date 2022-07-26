@@ -38,7 +38,7 @@ export default function HeroSection() {
                     <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/locals-1-0571221e6ee86dec18fe32bd2705e178.jpg"/>
                 </div>
             </Slider>}
-            <div className="md:container md:px-6 flex justify-end items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
+            <div className="md:container  xl:max-w-5xl 2xl:max-w-7xl md:px-6 flex justify-end items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
                 <div className="w-full md:w-[400px] md:rounded-lg bg-bg-gray p-6">
                     <div className="flex items-center py-3 pl-4 pr-3 rounded border-2 border-[#DFDEE2] text-sm relative pointer-events-none">
                         <div className="min-w-[24px] min-h-[24px] inline-flex items-center text-primary-brand-color">

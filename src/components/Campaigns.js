@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
 import Slider from "react-slick";
-import Banners from 'api/Buyuk/banners.json';
 import Title from "components/ui/Title"
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io"
 import { useWindowWidth } from '@react-hook/window-size'
 
-export default function Campaigns() {
+export default function Campaigns({Banners}) {
 
     const windowWidth = useWindowWidth()
 
@@ -55,16 +54,15 @@ export default function Campaigns() {
     };
 
     return (
-        <div className="container mx-auto md:py-8 md:px-6">
+        <div className="container mx-auto h-auto md:px-6 md:pt-8">
             {windowWidth >= 768 && <Title>Kampanyalar</Title>}
             <Slider {...settings} className="md:-mx-2">
-                {banners.length && banners.map((banner) => (                
+            {banners.length && banners.map((banner, index) => (
                     <div key={banner.id}>
                         <picture className="block md:px-2">
                             <img src={banner.image} className="md:rounded-lg"/>
                         </picture>
                     </div>
-                    
                 ))}
                 {(windowWidth < 768) ? new Array((1 - banners.length > 0) ? (1 - banners.length) : 0).fill(
                         <></>

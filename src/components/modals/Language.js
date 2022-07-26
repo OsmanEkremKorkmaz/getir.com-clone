@@ -23,7 +23,7 @@ export default function Language({closeModal}){
                 <div onClick={() => {closeModal(false)}} className="w-8 cursor-pointer h-8 top-8 right-8 absolute bg-[#f3f3f4] overflow-hidden rounded-lg inline-flex justify-center items-center">
                     <button className="p-0 inline-flex items-center justify-center">
                         <svg width={10} height={10} data-testid="icon" name="close" size="10" color="black" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                            <path d="M31.331 0.669c-0.892-0.892-2.334-0.892-3.226 0l-12.104 12.104-12.104-12.104c-0.892-0.892-2.334-0.892-3.226 0s-0.892 2.334 0 3.226l12.104 12.104-12.104 12.104c-0.892 0.892-0.892 2.334 0 3.227s2.334 0.892 3.226 0l12.104-12.105 12.104 12.105c0.892 0.892 2.334 0.892 3.226 0s0.892-2.334 0-3.227l-12.104-12.104 12.104-12.104c0.892-0.869 0.892-2.334 0-3.226z" class="style__Path-sc-__sc-hqksj3-2 kqvXtw"></path>
+                            <path d="M31.331 0.669c-0.892-0.892-2.334-0.892-3.226 0l-12.104 12.104-12.104-12.104c-0.892-0.892-2.334-0.892-3.226 0s-0.892 2.334 0 3.226l12.104 12.104-12.104 12.104c-0.892 0.892-0.892 2.334 0 3.227s2.334 0.892 3.226 0l12.104-12.105 12.104 12.105c0.892 0.892 2.334 0.892 3.226 0s0.892-2.334 0-3.227l-12.104-12.104 12.104-12.104c0.892-0.869 0.892-2.334 0-3.226z"></path>
                         </svg>
                     </button>
                 </div>

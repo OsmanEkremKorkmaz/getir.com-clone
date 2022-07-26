@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import cardsData from "api/MainPage/cards.json";
 
-export default function Cards() {
+export default function Cards({cardsData}) {
 
     const [cards, setCards] = useState([]);
 

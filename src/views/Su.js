@@ -1,9 +1,10 @@
 import HeroSection from "components/Su/HeroSection"
-import Campaigns from "components/Su/Campaigns"
+import Campaigns from "components/Campaigns"
 import MobileApp from "components/MobileApp"
-import Cards from "components/Su/Cards"
+import Banners from 'api/Su/banners.json';
+import Cards from "components/Cards"
 import { useWindowWidth } from '@react-hook/window-size'
-import Favorites from "components/Su/Favorites"
+import cardsData from "api/Su/cards.json";
 
 function Su(){
 
@@ -11,13 +12,12 @@ function Su(){
 
     return (
         <>
-            {windowWidth < 768 && <Campaigns/>}
+            {windowWidth < 768 && <Campaigns Banners={Banners}/>}
             <HeroSection/>
-            {windowWidth >= 768 && <Campaigns/>}
-            <div className="container mx-auto grid gap-y-6 pt-8 md:px-6">          
-                <Favorites />
+            {windowWidth >= 768 && <Campaigns Banners={Banners}/>}
+            <div className="container mx-auto grid gap-y-6 md:px-6">
                 <MobileApp/>
-                <Cards/>
+                <Cards cardsData={cardsData}/>
             </div>
         </>
     )

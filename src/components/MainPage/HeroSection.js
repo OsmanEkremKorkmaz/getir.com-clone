@@ -44,7 +44,7 @@ export default function HeroSection() {
                     <img alt="slide-item" className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/getir-mainpage-3-ffd1e98c5da51809f9adcc3a4a37d751.jpg"/>
                 </div>
             </Slider>}
-            <div className="md:container md:px-6 flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
+            <div className="md:container xl:max-w-5xl 2xl:max-w-7xl md:px-6 flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">
                 <div className="hidden md:block">
                     <img src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg"/>
                     <h3 className="mt-8 text-4xl font-semibold text-white">

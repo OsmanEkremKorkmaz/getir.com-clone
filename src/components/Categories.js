@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
-import categoryData from 'api/Buyuk/categories.json';
 import Category from "components/ui/Category";
 import Title from "components/ui/Title";
 
-export default function Categories() {
-
+export default function Categories({categoryData}) {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {

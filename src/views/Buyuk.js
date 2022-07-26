@@ -1,10 +1,12 @@
 import HeroSection from "components/Buyuk/HeroSection"
-import Categories from "components/Buyuk/Categories"
-import Campaigns from "components/Buyuk/Campaigns"
-import Favorites from "components/Buyuk/Favorites"
+import Categories from "components/Categories"
+import Campaigns from "components/Campaigns"
+import Banners from 'api/Buyuk/banners.json';
 import MobileApp from "components/MobileApp"
-import Cards from "components/Buyuk/Cards"
+import Cards from "components/Cards"
 import { useWindowWidth } from '@react-hook/window-size'
+import cardsData from "api/Buyuk/cards.json";
+import categoryData from 'api/Buyuk/categories.json';
 
 function MainPage(){
 
@@ -12,14 +14,13 @@ function MainPage(){
 
     return (
         <>
-            {windowWidth < 768 && <Campaigns/>}
+            {windowWidth < 768 && <Campaigns Banners={Banners}/>}
             <HeroSection/>
-            <Categories/>
-            {windowWidth >= 768 && <Campaigns/>}
-            <div className="container mx-auto grid gap-y-6 pt-8 md:px-6">          
-                <Favorites/>
+            <Categories categoryData={categoryData}/>
+            {windowWidth >= 768 && <Campaigns Banners={Banners}/>}
+            <div className="container mx-auto grid gap-y-6 md:px-6">
                 <MobileApp/>
-                <Cards/>
+                <Cards cardsData={cardsData}/>
             </div>
         </>
     )
