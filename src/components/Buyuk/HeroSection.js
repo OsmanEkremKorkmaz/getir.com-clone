@@ -33,28 +33,28 @@ export default function HeroSection() {
         <div className="relative h-auto md:h-[500px] before:bg-gradient-to-r before:from-primary-brand-color before:to-transparent before:absolute before:inset-0 before:w-full before:h-full before:z-10">
             {windowWidth >= 768 && <Slider {...settings}>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-8-f549a531be51240734553fb71550ce5d.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-8.jpg"/>
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-1-ae76901414c55d46ffc17ff0182c264b.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-1.jpg"/>
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-2-4d10b864d127e72942af806876ff3f24.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-2.jpg"/>
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-3-40a5665bd2f5bf388061e0c2f3ca4a4b.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-3.jpg"/>
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-4-084f26811a2ec79bfcac5582e29db80d.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-4.jpg"/>
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-5-9585774ecca123da206c87c36f01e0e8.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-5.jpg"/>
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-6-61d65d55307e0c0da7bc7fe928951ba3.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-6.jpg"/>
                 </div>
                 <div>
-                    <img className="w-full h-[500px] object-cover" src="https://getir.com/_next/static/images/market-7-8f621120b0e2786fad8389cd5b1718be.jpg"/>
+                    <img className="w-full h-[500px] object-cover" src="https://cdn.getir.com/getirweb-images/common/hero-posters/market-7.jpg"/>
                 </div>
             </Slider>}
             <div className="md:container xl:max-w-5xl 2xl:max-w-7xl md:px-6 flex justify-between items-center relative md:absolute top-0 left-0 md:left-1/2 translate-x-0 md:-translate-x-1/2 h-full z-20">

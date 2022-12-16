@@ -17,7 +17,7 @@ export default function MobileApp() {
                 </nav>
             </div>
             <picture className="hidden md:block pt-6 md:self-end">
-                <img src="https://getir.com/_next/static/images/phoneLanding-88c033545710c4808054072689e187d7.png" />
+                <img src="https://cdn.getir.com/getirweb-images/common/landing/waterPhoneLanding.png" />
             </picture>
         </div>
     )
